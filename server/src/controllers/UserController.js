@@ -22,5 +22,12 @@ module.exports = {
     //show user by id
     show(req,res){
         res.send('ดูข้อมูลผู้ใช้ '+ req.params.userId + " " + JSON.stringify(req.body))
+    },
+    //post que1
+    post(req, res){ 
+        res.send('que1 ' + req.params.userId + " " + JSON.stringify(req.body))
+    
+
+        
     }
 }

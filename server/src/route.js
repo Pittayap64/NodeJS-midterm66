@@ -5,7 +5,7 @@ module.exports = (app) =>{
     app.get('/users', UserController.index),
 
     //create
-    app.post('/user', UserController.create),
+    app.post('/add', UserController.post),
 
     //edit
     app.put('/user/:userId', UserController.put)
@@ -16,4 +16,5 @@ module.exports = (app) =>{
     //show by id
     app.get('/user/:userId', UserController.show)
 
+    
 }
